@@ -1,11 +1,9 @@
+const utterance = new SpeechSynthesisUtterance();
+utterance.lang = "pt-BR"
 
-    const utterance = new SpeechSynthesisUtterance();
-    utterance.lang = "pt-BR"
-
-function setText(event){
-    utterance.text = event.target.innerText
-}
 function ler(){
+    const txtdigitado = document.querySelector(".fields textarea").value
+    utterance.text = txtdigitado
     speechSynthesis.speak(utterance)
 }
 function parar(){

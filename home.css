@@ -46,7 +46,7 @@ html, body{
     color: var(--white-color);
     font-size: 2rem;
 }
-.fields .field{
+textarea{
     height: 250px;
     width: 100%;
     outline: none;
