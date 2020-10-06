@@ -1,0 +1,84 @@
+:root{
+    --white-color: #fff;
+    --purple-color: #523cf7;
+    --orange-color: #f76655;
+    --yellow-color: #fad537;
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.titles{
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-color: var(--purple-color);
+    color: var(--white-color);
+    line-height: 60px;
+    font-size: 2rem;
+}
+
+.titles strong{
+    color: var(--orange-color);
+}
+.fields{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    background-color: var(--purple-color);
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+}
+.fields h3{
+    margin: 15px 0;
+    color: var(--white-color);
+    font-size: 2rem;
+}
+.fields .field{
+    height: 250px;
+    width: 100%;
+    outline: none;
+    font-size: 2rem;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    background-color: var(--white-color);
+    color: var(--purple-color);
+}
+.fields .btns .speak,
+.fields .btns .stop{
+    height: 40px;
+    margin-top: 10px;
+    font-size: 1.8rem;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.fields .btns .speak{
+    background-color: var(--orange-color);
+    color: var(--white-color);
+}
+.fields .btns .stop{
+    background-color: var(--yellow-color);
+    color: var(--purple-color);
+}
+
+@media screen and (max-width: 700px){
+    .fields{
+        width: 100%;
+        border-radius: 0;
+    }
+}
